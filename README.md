@@ -267,7 +267,3 @@ my-awesome-app/
 ## 📄 License
 
 This project is a sample application for demonstration purposes.
-
-## 👥 Authors
-
-My Awesome App Team - [team@example.com](mailto:team@example.com)
