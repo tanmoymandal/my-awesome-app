@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Launch API + All Batch Jobs" type="CompoundRunConfigurationType">
+    <toRun name="Launch API" type="SpringBootApplicationConfigurationType" />
+    <toRun name="Launch Batch - All Jobs" type="SpringBootApplicationConfigurationType" />
+    <method v="2" />
+  </configuration>
+</component>

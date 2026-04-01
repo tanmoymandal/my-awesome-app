@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch API",
+            "request": "launch",
+            "mainClass": "com.example.myawesomeapp.api.ApiApplication",
+            "projectName": "api",
+            "envFile": "${workspaceFolder}/api/.env",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Batch - User Sync Job",
+            "request": "launch",
+            "mainClass": "com.example.myawesomeapp.batch.BatchApplication",
+            "projectName": "batch",
+            "envFile": "${workspaceFolder}/batch/.env",
+            "args": "--spring.batch.job.name=userSyncJob"
+        },
+        {
+            "type": "java",
+            "name": "Launch Batch - Product Report Job",
+            "request": "launch",
+            "mainClass": "com.example.myawesomeapp.batch.BatchApplication",
+            "projectName": "batch",
+            "envFile": "${workspaceFolder}/batch/.env",
+            "args": "--spring.batch.job.name=productReportJob"
+        },
+        {
+            "type": "java",
+            "name": "Launch Batch - All Jobs",
+            "request": "launch",
+            "mainClass": "com.example.myawesomeapp.batch.BatchApplication",
+            "projectName": "batch",
+            "envFile": "${workspaceFolder}/batch/.env",
+            "args": ""
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch API + All Batch Jobs",
+            "configurations": ["Launch API", "Launch Batch - All Jobs"]
+        }
+    ]
+}

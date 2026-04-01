@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Launch Batch - User Sync Job" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="batch" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.myawesomeapp.batch.BatchApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="SHORTEN_COMMAND_LINE" method="ARGS_FILE" />
+    <envs>
+      <env name="ENV_FILE" value="$PROJECT_DIR$/batch/.env" />
+    </envs>
+    <option name="PROGRAM_PARAMETERS" value="--spring.batch.job.name=userSyncJob" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
